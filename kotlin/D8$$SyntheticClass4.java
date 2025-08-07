@@ -1,0 +1,17 @@
+package kotlin;
+
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+
+/* compiled from: D8$$SyntheticClass */
+/* renamed from: kotlin.SafePublicationLazyImpl$$ExternalSyntheticBackportWithForwarding0, reason: use source file name */
+/* loaded from: classes.dex */
+public final /* synthetic */ class D8$$SyntheticClass4 {
+    public static /* synthetic */ boolean m(AtomicReferenceFieldUpdater atomicReferenceFieldUpdater, Object obj, Object obj2, Object obj3) {
+        while (!atomicReferenceFieldUpdater.compareAndSet(obj, obj2, obj3)) {
+            if (atomicReferenceFieldUpdater.get(obj) != obj2) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
